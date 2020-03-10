@@ -1,0 +1,431 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script src="https://kit.fontawesome.com/ab363dda8c.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+</head>
+
+<body>
+    <main>
+        <nav class="navigation" style="display: flex;">
+            <form name="f1" style="margin: 0px; display: flex;" id="f1">
+                <button type="button" class="btn btn-light cell" name="code" disabled><i class="fas fa-code"></i></button>
+                </div>
+                <div class="btn-group btn-group-toggle cell" data-toggle="buttons">
+                    <label class="btn btn-light labelErr" id="bold">
+                        <input type="checkbox" name="boldBtn" value="bold"><i class="fas fa-bold"></i>
+                    </label>
+                    <label class="btn btn-light labelErr" id="italic">
+                        <input type="checkbox" id="italicBtn"><i class="fas fa-italic"></i>
+                    </label>
+                    <label class="btn btn-light labelErr" id="underline">
+                        <input type="checkbox" id="underlineBtn"><i class="fas fa-underline"></i>
+                    </label>
+                    <label class="btn btn-light labelErr" id="lineThrough">
+                        <input type="checkbox" id="lineThroughBtn"><i class="fas fa-strikethrough"></i>
+                    </label>
+                </div>
+                <div class="btn-group btn-group-toggle cell" data-toggle="buttons">
+                    <label class="btn btn btn-light" id="left">
+                        <input type="radio" name="textAlign" value="left"><i class="fas fa-align-left"></i>
+                    </label>
+                    <label class="btn btn btn-light" id="center">
+                        <input type="radio" name="textAlign" value="center"><i class="fas fa-align-justify"></i>
+                    </label>
+                    <label class="btn btn btn-light" id="right">
+                        <input type="radio" name="textAlign" value="right"><i class="fas fa-align-right"></i>
+                    </label>
+                </div>
+                <div class="btn-group btn-group-toggle cell" role="group">
+                    <div class="btn-group" role="group">
+                        <button type="button" id="fontFamily" class="btn btn-light dropdown-toggle"
+                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <i class="fas fa-font"></i>
+                        </button>
+                        <div class="dropdown-menu dropdown-menu-right family">
+                            <a class="dropdown-item arial" href="#">Arial</a>
+                            <a class="dropdown-item georgia" href="#">Georgia</a>
+                            <a class="dropdown-item impact" href="#">Impact</a>
+                            <a class="dropdown-item tahoma" href="#">Tahoma</a>
+                            <a class="dropdown-item timesNewRoman" href="#">Times New Roman</a>
+                            <a class="dropdown-item verdana" href="#">Verdana</a>
+                        </div>
+                    </div>
+
+                    <div class="btn-group" role="group">
+                        <button type="button" id="fontSize" class="btn btn-light dropdown-toggle" data-toggle="dropdown"
+                            aria-haspopup="true" aria-expanded="false">
+                            <i class="fas fa-text-height"></i>
+                        </button>
+                        <div class="dropdown-menu dropdown-menu-right size">
+                            <a class="dropdown-item fontSize12px" href="#">12px</a>
+                            <a class="dropdown-item fontSize14px" href="#">14px</a>
+                            <a class="dropdown-item fontSize16px" href="#">16px</a>
+                            <a class="dropdown-item fontSize18px" href="#">18px</a>
+                            <a class="dropdown-item fontSize20px" href="#">20px</a>
+                            <a class="dropdown-item fontSize22px" href="#">22px</a>
+                            <a class="dropdown-item fontSize25px" href="#">25px</a>
+                            <a class="dropdown-item fontSize30px" href="#">30px</a>
+                        </div>
+                    </div>
+
+
+                    <!-- Button trigger modal -->
+                    <button type="button" id="palette" class="btn btn-light" data-toggle="modal"
+                        data-target="#paletteText">
+                        <i class="fas fa-palette"></i>
+                    </button>
+
+                    <!-- Modal -->
+                    <div class="modal fade" id="paletteText" tabindex="-1" role="dialog"
+                        aria-labelledby="exampleModal3Label" aria-hidden="true">
+                        <div class="modal-dialog" role="document">
+                            <div class="modal-content">
+                                <div class="modal-header" style="border-bottom: none;">
+                                    <h5 class="modal-title" id="exampleModal3Label">Choose color of text</h5>
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                        <span aria-hidden="true">&times;</span>
+                                    </button>
+                                </div>
+                                <div class="allColorText">
+                                    <div class=" black"></div>
+                                    <div class=" silver"></div>
+                                    <div class=" gray"></div>
+                                    <div class=" whitesmoke"></div>
+                                    <div class=" maroon"></div>
+                                    <div class=" red"></div>
+                                    <div class=" purple"></div>
+                                    <div class=" pink"></div>
+                                    <div class=" fuchsia"></div>
+                                    <div class=" lightgreen"></div>
+                                    <div class="lightblue"></div>
+                                    <div class=" lightseagreen"></div>
+                                    <div class=" coral"></div>
+                                    <div class=" chocolate"></div>
+                                    <div class=" chartreuse"></div>
+                                    <div class=" lime"></div>
+                                    <div class=" blue"></div>
+                                    <div class=" olive"></div>
+                                    <div class=" yellow"></div>
+                                    <div class=" navy"></div>
+                                    <div class="aqua"></div>
+                                </div>
+                                <!--  -->
+                            </div>
+                        </div>
+                    </div>
+
+                    <button type="button" id="image" class="btn btn-light" data-toggle="modal" data-target="#paletteBg">
+                        <i class="fas fa-image"></i>
+                    </button>
+
+                    <!-- Modal -->
+                    <div class="modal fade" id="paletteBg" tabindex="-1" role="dialog"
+                        aria-labelledby="exampleModal3Label" aria-hidden="true">
+                        <div class="modal-dialog" role="document">
+                            <div class="modal-content">
+                                <div class="modal-header" style="border-bottom: none;">
+                                    <h5 class="modal-title" id="exampleModal3Label">Choose background color or image
+                                    </h5>
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                        <span aria-hidden="true">&times;</span>
+                                    </button>
+                                </div>
+                                <div class="btn-group btn-group-toggle chooseBg" data-toggle="buttons">
+                                    <label class="btn btn btn-light" id="colorsBg">
+                                        <input type="radio" name="paletteBg" value="colors">Colors
+                                    </label>
+                                    <label class="btn btn btn-light" id="imagesBg">
+                                        <input type="radio" name="paletteBg" value="images">Images
+                                    </label>
+                                    <label class="btn btn btn-light" id="filesBg">
+                                        <input type="radio" name="paletteBg" value="files">Files
+                                    </label>
+                                </div>
+                                <div class="allColorBg" style="display: none;">
+                                    <div class=" black"></div>
+                                    <div class=" silver"></div>
+                                    <div class=" gray"></div>
+                                    <div class=" whitesmoke"></div>
+                                    <div class=" maroon"></div>
+                                    <div class=" red"></div>
+                                    <div class=" purple"></div>
+                                    <div class=" pink"></div>
+                                    <div class=" fuchsia"></div>
+                                    <div class=" lightgreen"></div>
+                                    <div class="lightblue"></div>
+                                    <div class=" lightseagreen"></div>
+                                    <div class=" coral"></div>
+                                    <div class=" chocolate"></div>
+                                    <div class=" chartreuse"></div>
+                                    <div class=" lime"></div>
+                                    <div class=" blue"></div>
+                                    <div class=" olive"></div>
+                                    <div class=" yellow"></div>
+                                    <div class=" navy"></div>
+                                    <div class="aqua"></div>
+                                </div>
+                                <div class="allImagesBg" style="display: none;">
+                                    <img src="img/image1.jpg" class="image">
+                                    <img src="img/image2.jpg" class="image">
+                                    <img src="img/image3.jpg" class="image">
+                                    <img src="img/image4.jpg" class="image">
+                                    <img src="img/image5.jpg" class="image">
+                                    <img src="img/image6.jpg" class="image">
+                                    <img src="img/image7.jpg" class="image">
+                                    <img src="img/image8.jpg" class="image">
+                                    <img src="img/image9.jpg" class="image">
+                                </div>
+                                <div class="custom-file file" id="proba" style="display: none;">
+                                    <input type="file" class="custom-file-input" id="customFile">
+                                    <label class="custom-file-label" for="customFile">Choose file</label>
+                                </div>
+                                <!--  -->
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <button type="button" class="btn btn-light cell" data-toggle="modal" data-target="#signInModal">
+                    <i class="fas fa-lock"></i>
+                </button>
+                <div class="modal fade" id="signInModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+                    aria-hidden="true">
+                    <div class="modal-dialog" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="exampleModalLabel">Sign in</h5>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                            </div>
+                            <div class="input-group " style="width: 480px; margin: 8px;">
+                                <input type="text" class="form-control" placeholder="Login here..."
+                                    aria-label="Username" aria-describedby="addon-wrapping" id="login">
+                            </div>
+                            <div class="input-group flex-nowrap" style="width: 480px; margin: 8px;">
+                                <input type="text" class="form-control" placeholder="Password here..."
+                                    aria-label="Username" aria-describedby="addon-wrapping" id="pass">
+                            </div>
+                            <p class="err" id="errSignIn"></p>
+                            <button type="button" class="btn btn-secondary" id="signIn"
+                                style="width: 480px; margin: 8px;">Sign in</button>
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </nav>
+        <div class="content" style="margin: 0px;">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam ipsum doloremque obcaecati iure!</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam ipsum doloremque obcaecati iure!</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam ipsum doloremque obcaecati iure!</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam ipsum doloremque obcaecati iure!</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam ipsum doloremque obcaecati iure!</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam ipsum doloremque obcaecati iure!</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam ipsum doloremque obcaecati iure!</p>
+        </div>
+    </main>
+
+    <form name="f2" style="margin-bottom: 0px; display: none;">
+        <nav class="navigation">
+            <div class="btn-group btn-group-toggle" role="group">
+                <button type="button" id="save" class="btn btn-light">
+                    <i class="fas fa-save"></i>
+                </button>
+                <button type="button" id="table" class="btn btn-light" data-toggle="modal" data-target="#tableModal">
+                    <i class="fas fa-table"></i>
+                </button>
+                <button type="button" id="listOl" class="btn btn-light" data-toggle="modal" data-target="#listOlModal">
+                    <i class="fas fa-list-ol"></i>
+                </button>
+                <button type="button" id="listUl" class="btn btn-light" data-toggle="modal" data-target="#listUlModal">
+                    <i class="fas fa-list-ul"></i>
+                </button>
+            </div>
+        </nav>
+        <textarea name="area" id="area" cols="30" rows="10" style="margin-top: 0px;"></textarea>
+
+        <!-- Модальне вікно для ствоення таблиці -->
+        <div class="modal fade bd-example-modal-lg" id="tableModal" tabindex="-1" role="dialog"
+            aria-labelledby="myLargeModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-lg">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">Create table</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div style="display: flex;">
+                        <div id="leftSideTable">
+                            <div class="form-column">
+                                <div class=" mb-3">
+                                    <label for="countTr">Count TR:</label>
+                                    <input type="text" class="form-control tableParam" id="countTr"
+                                        placeholder="Type here...">
+                                </div>
+                                <div class="form-group">
+                                    <label for="widthTd">Width of TD</label>
+                                    <input type="text" class="form-control" id="widthTd" placeholder="Type here...">
+                                </div>
+                                <div class="form-group">
+                                    <label for="widthBorder">Width of border</label>
+                                    <input type="text" class="form-control" id="widthBorder" placeholder="Type here...">
+                                </div>
+                            </div>
+                            <p class="err" id="errTable">Invalid value</p>
+                        </div>
+                        <div id="rightSideTable">
+                            <div class="form-column">
+                                <div class="mb-3">
+                                    <label for="countTd">Count TD:</label>
+                                    <input type="text" class="form-control tableParam" id="countTd"
+                                        placeholder="Type here...">
+                                </div>
+                                <div class="form-group">
+                                    <label for="widthTd">Height of TD</label>
+                                    <input type="text" class="form-control" id="heightTd" placeholder="Type here...">
+                                </div>
+                                <div style="display: flex;">
+                                    <div class="col-6 form-group" style="padding-left: 0px;">
+                                        <label for="widthBorder">Style of border</label>
+                                        <select class="custom-select" name="styleBorder">
+                                            <option selected disabled>Choose style</option>
+                                            <option value="dotted">dotted</option>
+                                            <option value="dashed">dashed</option>
+                                            <option value="solid">solid</option>
+                                            <option value="double">double</option>
+                                            <option value="groove">groove</option>
+                                            <option value="ridge">ridge</option>
+                                            <option value="inset">inset</option>
+                                            <option value="outset">outset</option>
+                                        </select>
+                                    </div>
+                                    <div class="col-6 form-group" style="padding-right: 0px;">
+                                        <label for="widthBorder">Color of border</label>
+                                        <select class="custom-select" name="colorBorder">
+                                            <option selected disabled>Choose color</option>
+                                            <option value="black">black</option>
+                                            <option value="red">red</option>
+                                            <option value="green">green</option>
+                                            <option value="blue">blue</option>
+                                            <option value="yellow">yellow</option>
+                                            <option value="white">white</option>
+                                            <option value="gray">gray</option>
+                                            <option value="pink">pink</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div style="display: flex; justify-content: space-around; margin-bottom: 8px;">
+                        <button type="button" id="resetTable" class="btn btn-danger" style="width: 48%">Reset</button>
+                        <button type="button" id="createTable" class="btn btn-success" style="width: 48%">Create
+                            table</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Модальне вікно для ствоення нумерованого списку -->
+        <div class="modal fade" id="listOlModal" tabindex="-1" role="dialog" aria-labelledby="exampleModal3Label"
+            aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModal3Label">Modal title</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="form-column">
+                            <div class="mb-3">
+                                <label for="countTd">Count li item:</label>
+                                <input type="text" class="form-control tableParam" id="countLiOl"
+                                    placeholder="Type here...">
+                            </div>
+                            <div class="form-group" style="padding-right: 0px;">
+                                <label for="widthBorder">Type mark of list:</label>
+                                <select class="custom-select" name="typeOl">
+                                    <option selected disabled>Choose Ol type mark</option>
+                                    <option value="decimal">1</option>
+                                    <option value="upper-alpha">I</option>
+                                    <option value="lower-roman">i</option>
+                                    <option value="upper-alpha">A</option>
+                                    <option value="lower-alpha">a</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="err" id="errOl">Invalid value</p>
+                    <div style="display: flex; justify-content: space-around; margin-bottom: 8px;">
+                        <button type="button" id="resetOl" class="btn btn-danger" style="width: 48%">Reset</button>
+                        <button type="button" id="createOl" class="btn btn-success" style="width: 48%">Create
+                            list</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Модальне вікно для ствоення не нумерованого списку -->
+        <div class="modal fade" id="listUlModal" tabindex="-1" role="dialog" aria-labelledby="exampleModal3Label"
+            aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModal3Label">Modal title</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="form-column">
+                            <div class="mb-3">
+                                <label for="countTd">Count li item:</label>
+                                <input type="text" class="form-control tableParam" id="countLiUl"
+                                    placeholder="Type here...">
+                            </div>
+                            <div class="form-group" style="padding-right: 0px;">
+                                <label for="widthBorder">Type mark of list:</label>
+                                <select class="custom-select" name="typeUl">
+                                    <option selected disabled>Choose Ul type mark</option>
+                                    <option value="circle">circle</option>
+                                    <option value="disc">disc</option>
+                                    <option value="square">square</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="err" id="errUl">Invalid value</p>
+                    <div style="display: flex; justify-content: space-around; margin-bottom: 8px;">
+                        <button type="button" id="resetUl" class="btn btn-danger" style="width: 48%">Reset</button>
+                        <button type="button" id="createUl" class="btn btn-success" style="width: 48%">Create
+                            list</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </form>
+
+
+    <script src="main.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+
+</body>
+
+</html>

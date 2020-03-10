@@ -1,0 +1,274 @@
+.navigation {
+    display: flex;
+    width: 100%;
+    height: 72px;
+    background: rgb(134, 132, 132);
+    justify-content: center;
+    align-items: center;   
+}
+
+.cell {
+    margin-left: 8px;   
+}
+#bold,#italic,#underline,#lineThrough,#left,#center,#right {
+    display: flex;
+    align-items: center;
+}
+
+.content {
+    height: 100%;
+    width: 100%;
+    padding: 32px;
+    line-height: 16px;
+}
+
+/* стилізація кнопок на стиль тексту */
+.arial {
+    font-family: Arial, Helvetica, sans-serif;
+}
+.georgia {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.impact {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+.tahoma {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.timesNewRoman {
+    font-family: 'Times New Roman', Times, serif;
+}
+.verdana {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+/* стилізація кнопок на розмір шрифту  */
+.fontSize12px {
+    font-size: 12px;
+}
+.fontSize14px {
+font-size: 14px;
+}
+.fontSize16px {
+    font-size: 16px;
+
+}
+.fontSize18px {
+    font-size: 18px;
+
+}
+.fontSize20px {
+    font-size: 20px;
+
+}
+.fontSize22px {
+    font-size: 22px;
+
+}
+.fontSize25px {
+    font-size: 28px;
+
+}
+.fontSize30px {
+    font-size: 30px;
+}
+
+/* стилізація модального вікна для палети кольорів тексту */
+.allColorText {
+    margin: 6px 46px;
+    display: flex;
+    flex-wrap: wrap;
+}
+.black {
+    background: black;
+    margin: 4px;
+    width: 50px;
+    height: 50px;
+    border-radius: 5%;
+}
+.silver {
+    margin: 4px;
+    width: 50px;
+    height: 50px;
+    border-radius: 5%;
+    background: silver;
+}
+.gray {
+    margin: 4px;
+    width: 50px;
+    height: 50px;
+    border-radius: 5%;
+    background: gray;
+}
+.whitesmoke {
+    margin: 4px;
+    width: 50px;
+    height: 50px;
+    border-radius: 5%;
+    background: whitesmoke;
+}
+.maroon {
+    margin: 4px;
+    width: 50px;
+    height: 50px;
+    border-radius: 5%;
+    background: maroon;
+}
+.red {
+    margin: 4px;
+    width: 50px;
+    height: 50px;
+    border-radius: 5%;
+    background: red;
+}
+.purple {
+    margin: 4px;
+    width: 50px;
+    height: 50px;
+    border-radius: 5%;
+    background: purple;
+}
+.pink {
+    margin: 4px;
+    width: 50px;
+    height: 50px;
+    border-radius: 5%;
+    background: pink;
+}
+.fuchsia {
+    margin: 4px;
+    width: 50px;
+    height: 50px;
+    border-radius: 5%;
+    background: fuchsia;
+}
+.lightgreen {
+    margin: 4px;
+    width: 50px;
+    height: 50px;
+    border-radius: 5%;
+    background: lightgreen;
+}
+.lightblue {
+    margin: 4px;
+    width: 50px;
+    height: 50px;
+    border-radius: 5%;
+    background: lightblue;
+}
+.lightseagreen {
+    margin: 4px;
+    width: 50px;
+    height: 50px;
+    border-radius: 5%;
+    background: lightseagreen;
+}
+.coral {
+    margin: 4px;
+    width: 50px;
+    height: 50px;
+    border-radius: 5%;
+    background: coral;
+}
+.chocolate {
+    margin: 4px;
+    width: 50px;
+    height: 50px;
+    border-radius: 5%;
+    background: chocolate;
+}
+.chartreuse {
+    margin: 4px;
+    width: 50px;
+    height: 50px;
+    border-radius: 5%;
+    background: chartreuse;
+}
+.lime {
+    margin: 4px;
+    width: 50px;
+    height: 50px;
+    border-radius: 5%;
+    background: lime;
+}
+.blue {
+    margin: 4px;
+    width: 50px;
+    height: 50px;
+    border-radius: 5%;
+    background: blue;
+}
+.olive {
+    margin: 4px;
+    width: 50px;
+    height: 50px;
+    border-radius: 5%;
+    background: olive;
+}
+.yellow {
+    margin: 4px;
+    width: 50px;
+    height: 50px;
+    border-radius: 5%;
+    background: yellow;
+}
+.navy {
+    margin: 4px;
+    width: 50px;
+    height: 50px;
+    border-radius: 5%;
+    background: navy;
+}
+.aqua {
+    margin: 4px;
+    width: 50px;
+    height: 50px;
+    border-radius: 5%;
+    background: aqua;
+}
+
+
+/* стилізація модального вікна для палети кольорів заднього фону */
+.allColorBg {
+    margin: 12px 46px;
+    display: flex;
+    flex-wrap: wrap;
+}
+.allImagesBg {
+    margin: 12px 46px;
+    display: flex;
+    flex-wrap: wrap;
+}
+.image {
+    margin: 4px;
+    width: 120px;
+    height: 90px;
+}
+
+.file {
+    margin: 20px 0px;
+}
+
+.err {
+    margin: 0px 0px 0px 8px;
+    color: red;
+    display: none;
+}
+
+#area {
+    width: 100%;
+    height: 100%;
+    padding: 20px;
+    outline: none;
+    border: none;
+}
+
+
+#leftSideTable {
+    width: 50%;
+    margin: 12px;
+}
+#rightSideTable {
+    width: 50%;
+    margin: 12px;
+}
